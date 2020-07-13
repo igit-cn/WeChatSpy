@@ -3,7 +3,7 @@
 [https://github.com/MaoningGuan/PyWeChat](https://github.com/MaoningGuan/PyWeChat)
 ## 更新日志
 ## 1.0.0.6:
-增加获取个人信息的功能。
+增加获取用户个人信息的功能。
 ## 1.0.0.5:
 完善代码逻辑。
 ## 1.0.0.4：

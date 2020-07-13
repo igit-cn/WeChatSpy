@@ -1,4 +1,6 @@
 # PC微信Hook:
+## 使用教程
+[https://github.com/MaoningGuan/PyWeChat](https://github.com/MaoningGuan/PyWeChat)
 ## 1.0.0.6:
 增加获取个人信息的功能。
 ## 1.0.0.5:

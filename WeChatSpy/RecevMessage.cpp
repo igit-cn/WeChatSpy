@@ -67,8 +67,6 @@ VOID send_to_py_server(DWORD msgAdd)
 	//MessageBox(NULL, (LPCWSTR)processPid, L"ProcessId", 0);
 	if (*(LPVOID *)wxid2Add <= 0x0) {
 		//获取个人消息
-	/*	swprintf_s(buff, L"{\"type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}",
-			type, L"", *((LPVOID *)wxidAdd), *((LPVOID *)messageAdd));*/
 		swprintf_s(buff, L"{\"pid\":%s,\"type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}",
 			processPid, type, L"", *((LPVOID *)wxidAdd), *((LPVOID *)messageAdd));
 	}
@@ -125,7 +123,7 @@ VOID __declspec(naked) HookF()
 	}
 	//然后跳转到我们自己的处理函数
 	//显示接收到的消息内容
-	printLog(cEsi);
+	//printLog(cEsi);
 	//把数据发给server
 	send_to_py_server(cEsi);
 	retAdd = WinAdd + 0x355618;
@@ -149,12 +147,12 @@ VOID __declspec(naked) HookF()
 	}
 }
 
-VOID StartHookWeChat(HWND hwndDlg)
+VOID StartHookWeChat()
 {
 	DWORD hookAdd = getWechatWin() + 0x355613;
 	hWHND = OpenProcess(PROCESS_ALL_ACCESS, NULL, GetCurrentProcessId());
 	WinAdd = getWechatWin();
-	hDlg = hwndDlg;
+	//hDlg = hwndDlg;
 	LPVOID jmpAdd = &HookF;
 
 	BYTE JmpCode[HOOK_LEN] = { 0 };

@@ -155,6 +155,7 @@
   <ItemGroup>
     <ClInclude Include="cJSON.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="getPersonalInfo.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="RecevMessage.h" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClCompile Include="cJSON.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="getPersonalInfo.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

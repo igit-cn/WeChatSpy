@@ -13,7 +13,7 @@
 ## 1.0.0.4：
 * 增加支持发送中文文本消息的功能。
 ***
-原因分析：
+> 原因分析：
 <br/>
 python的data = json.dumps(data)函数会把data里面的中文以ACSII进行编码，如：
 <br/>
@@ -30,6 +30,7 @@ python的data = json.dumps(data)函数会把data里面的中文以ACSII进行编
 修改python代码为：data = json.dumps(data, ensure_ascii=False)
 <br/>
 最后的data为：b"python server\xe6\x94\xb6\xe5\x88\xb0"
+
 ## 1.0.0.3：
 * 增加Python程序可以向微信发送英文文本信息的功能，暂不支持发送中文。
 ## 1.0.0.2：

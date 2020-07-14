@@ -1,4 +1,5 @@
 # PC微信Hook:
+PC微信Hook程序：Hook到微信消息，然后与Python程序进行交互。
 ## 使用教程:
 * [https://github.com/MaoningGuan/PyWeChat](https://github.com/MaoningGuan/PyWeChat)
 ## 更新日志

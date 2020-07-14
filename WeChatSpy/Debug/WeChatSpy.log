@@ -34,13 +34,13 @@ e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(40): warning C4477: “
 e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(44): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“LPVOID”
 e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(44): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 2 拥有了类型“LPVOID”
 e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(44): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 3 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(70): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 4 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(70): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 5 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(75): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 3 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(75): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 4 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(75): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 5 拥有了类型“LPVOID”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(171): warning C4477: “swprintf_s”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“DWORD”
-e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(176): warning C4477: “swprintf_s”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“DWORD”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(79): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 6 拥有了类型“LPVOID”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(79): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 7 拥有了类型“LPVOID”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(84): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 5 拥有了类型“LPVOID”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(84): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 6 拥有了类型“LPVOID”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(84): warning C4477: “swprintf_s”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 7 拥有了类型“LPVOID”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(180): warning C4477: “swprintf_s”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“DWORD”
+e:\python\code\hook\wechatspy\wechatspy\recevmessage.cpp(185): warning C4477: “swprintf_s”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“DWORD”
   sendMessage.cpp
   socketTool.cpp
 e:\python\code\hook\wechatspy\wechatspy\sockettool.cpp(20): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings

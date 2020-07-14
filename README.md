@@ -1,6 +1,6 @@
 # PC微信Hook:
 ## 使用教程:
-[https://github.com/MaoningGuan/PyWeChat](https://github.com/MaoningGuan/PyWeChat)
+# [https://github.com/MaoningGuan/PyWeChat](https://github.com/MaoningGuan/PyWeChat)
 ## 更新日志
 ## 1.0.0.7:
 * 增加self类型说明

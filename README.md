@@ -30,4 +30,4 @@ python的data = json.dumps(data)函数会把data里面的中文以ACSII进行编
 ## 1.0.0.1：
 * 实现了Hook微信收到的文本消息。
 ## 作者寄语
-* 本项目为开源项目，若你开发了更多的功能，可以pull request给我。
+* 本项目为开源项目，若你开发了新的功能，可以pull request给我。

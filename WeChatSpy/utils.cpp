@@ -21,23 +21,6 @@ char* UnicodeToChar(const wchar_t* unicode)
 	return szCHAR;
 }
 
-/************************************************************************
-*int CN2Unicode(char *input,wchar_t *output)
-*功能：中文字符转换为unicode字符
-*参数：input，包含中文的字符串，output，Unicode字符串
-*
-*************************************************************************/
-int CN2Unicode(char *input, wchar_t *output)
-{
-	int len = strlen(input);
-
-	//wchar_t *out = (wchar_t *) malloc(len*sizeof(wchar_t));
-
-	len = MultiByteToWideChar(CP_ACP, 0, input, -1, output, MAX_PATH);
-
-	return 1;
-}
-
 //UTF8转成Unicode
 wchar_t * UTF8ToUnicode(const char* str)
 {

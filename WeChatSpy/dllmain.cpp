@@ -2,16 +2,19 @@
 #include "pch.h"
 #include <Windows.h>
 #include "resource.h"
-#include "RecevMessage.h"
-#include "utils.h"
 #include <stdio.h>
 #include <WINSOCK2.H>
-#include "socketTool.h"
 #include <ctime> 
 #include <stdlib.h>
-#include "sendMessage.h"
 #include "cJSON.h"
 #include <atlstr.h>
+
+#include "sendMessage.h"
+#include "socketTool.h"
+#include "RecevMessage.h"
+#include "utils.h"
+#include "getPersonalInfo.h"
+
 using namespace std;
 
 
@@ -42,7 +45,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 			if (Global_Client == 0)
 				MessageBox(NULL, L"首次连接Python server失败", L"Connect server error", 0);
 		}
-		CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)ShowUI, hModule, NULL, 0);
+		CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)StartHookWeChat, NULL, NULL, 0);
 		CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)hold_the_socket, NULL, NULL, 0);
 		CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)Listen_to_Server, NULL, NULL, 0);
 		break;
@@ -93,6 +96,10 @@ VOID Listen_to_Server()
 					//发送文本消息
 					sendTextMessage(wxid, at_wxid, message);
 					break;
+				//获取个人信息
+				case 2:
+					readWechatData();
+
 				default:
 					break;
 				}
@@ -115,7 +122,7 @@ VOID hold_the_socket()
 	_itoa_s(PID, pid_str, 10);
 	//get_process_pid(processPid); //获取微信进程pid， GetCurrentProcessId不能在其他文件调用
 	swprintf(processPid, sizeof(processPid), L"%hs", pid_str);
-	swprintf_s(buff, L"{\"pid\":%s,\"type\":%s}", processPid, type);
+	swprintf_s(buff, L"{\"pid\":%s,\"type\":%s}*393545857*", processPid, type);
 	const char * sendData = UnicodeToChar(buff);  //将Unicode编码转成CHAR类型，用于socket传输
 	SOCKET client = 0;
 	while (true)
@@ -160,7 +167,7 @@ INT_PTR CALLBACK DialogProc(
 	switch (uMsg)
 	{
 	case WM_INITDIALOG:
-		StartHookWeChat(hwndDlg);
+		//StartHookWeChat(hwndDlg);
 		break;
 	case WM_CLOSE:
 		EndDialog(hwndDlg, 0);

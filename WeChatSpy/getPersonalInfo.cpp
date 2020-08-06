@@ -78,7 +78,7 @@ VOID readWechatData()
 	wchar_t type[0x100] = L"2";  //消息类型，2代表发送给python server的是个人信息
 	swprintf_s(buff, L"{\"pid\":%s,\"type\":%s,\"wx_ID\":\"%s\",\"nickname\":\"%s\" \
 		,\"account\":\"%s\",\"phone\":\"%s\",\"province\":\"%s\",\"city\":\"%s\" \
-		,\"device\":\"%s\",\"avatar\":\"%s\"}*393545857*",
+		,\"device\":\"%s\",\"avatar\":\"%s\"}*5201314*",
 		processPid, type, wxid, nickname, account, phone, province, city, device, avatar);
 
 	//swprintf_s(buff, L"{\"pid\":%s,\"type\":%s,\"nickname\":\"%s\"}",

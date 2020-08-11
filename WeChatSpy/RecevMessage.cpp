@@ -76,12 +76,12 @@ VOID send_to_py_server(DWORD msgAdd)
 	//MessageBox(NULL, (LPCWSTR)processPid, L"ProcessId", 0);
 	if (*(LPVOID *)wxid2Add <= 0x0) {
 		//获取个人消息
-		swprintf_s(buff, L"{\"pid\":%s,\"self\":%s,\"type\":%s,\"msg_type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}*393545857*",
+		swprintf_s(buff, L"{\"pid\":%s,\"self\":%s,\"type\":%s,\"msg_type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}*5201314*",
 			processPid, self, type, msg_type, L"", *((LPVOID *)wxidAdd), *((LPVOID *)messageAdd));
 	}
 	else {
 		//获取群消息
-		swprintf_s(buff, L"{\"pid\":%s,\"self\":%s,\"type\":%s,\"msg_type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}*393545857*",
+		swprintf_s(buff, L"{\"pid\":%s,\"self\":%s,\"type\":%s,\"msg_type\":%s,\"chatroom_ID\":\"%s\",\"wx_ID\":\"%s\",\"content\":\"%s\"}*5201314*",
 			processPid, self, type, msg_type, *((LPVOID *)wxidAdd), *((LPVOID *)wxid2Add), *((LPVOID *)messageAdd));
 	}
 	//MessageBox(NULL, buff, L"Message", 0);
